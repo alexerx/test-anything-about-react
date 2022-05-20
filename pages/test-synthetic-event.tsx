@@ -11,8 +11,9 @@ export const TestSyntheticEvent = () => {
     console.log('synthetic event');
   };
 
-  const handleNativeClick = () => {
+  const handleNativeClick = (e) => {
     console.log('native event');
+    // e.stopPropagation();
   };
 
   useEffect(() => {
