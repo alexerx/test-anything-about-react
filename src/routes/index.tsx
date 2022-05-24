@@ -8,9 +8,9 @@ export const routes = [
     title: '测试合成事件',
     element: <TestSyntheticEvent />,
   },
-  {
-    path: '/text-import-execution',
-    title: '测试合成事件',
-    element: <TestImportExecution />,
-  },
+  // {
+  //   path: '/text-import-execution',
+  //   title: '测试import执行',
+  //   element: <TestImportExecution />,
+  // },
 ];

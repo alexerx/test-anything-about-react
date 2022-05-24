@@ -9,9 +9,9 @@ import './style.css';
 export default function App() {
   return (
     <div>
-      <Stack>
+      <Stack direction="row" spacing={4}>
         {routes?.map((route) => (
-          <Button variant="outline">
+          <Button>
             <Link to={route.path}>{route.title}</Link>
           </Button>
         ))}
