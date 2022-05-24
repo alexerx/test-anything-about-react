@@ -3,7 +3,8 @@ import { Stack, Button } from '@chakra-ui/react';
 
 /**
  * 结论：
- *
+ * 先原生事件 后合成事件
+ * 依赖冒泡机制，事件委托
  */
 
 export const TestSyntheticEvent = () => {
