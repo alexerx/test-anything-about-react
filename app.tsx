@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-
-import { TestSyntheticEvent } from './src/pages/test-synthetic-event';
+import { Stack, Button } from '@chakra-ui/react';
 
 import { routes } from './src/routes';
 
@@ -10,14 +9,15 @@ import './style.css';
 export default function App() {
   return (
     <div>
-      <nav>
+      <Stack>
         {routes?.map((route) => (
-          <Link to={route.path}>{route.title}</Link>
+          <Button variant="outline">
+            <Link to={route.path}>{route.title}</Link>
+          </Button>
         ))}
-      </nav>
+      </Stack>
 
       <Routes>
-        <Route path="/test-synthetic-event" element={<TestSyntheticEvent />} />
         {routes?.map((route) => (
           <Route path={route.path} element={route.element} />
         ))}
