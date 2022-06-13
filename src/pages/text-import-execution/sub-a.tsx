@@ -4,8 +4,14 @@ export interface SubAProps {
   a?: string;
 }
 
-alert('suba');
+let num = 0;
+++num;
+
+// alert('suba');
 
 export const SubA: React.FC<SubAProps> = (props) => {
-  return <div>suba</div>;
+  // useEffect(() => {
+  //   ++num;
+  // }, []);
+  return <div>suba, num: {num}</div>;
 };
